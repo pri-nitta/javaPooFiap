@@ -22,4 +22,14 @@ public class ContaCorrente extends Conta{
 	public double getSaldoDisponivel() {
 		return super.getSaldo() + chequeEspecial;
 	}
+	
+	//sobrescrita de métodos - polimorfismo
+	//dois métodos com a mesma assinatura, mesmos parametros de entrada
+	//usar o mesmo método de formas diferentes
+	
+	@Override
+	public void retirar(double valor) {
+		valor += 10;
+		super.retirar(valor);
+	}
 }
