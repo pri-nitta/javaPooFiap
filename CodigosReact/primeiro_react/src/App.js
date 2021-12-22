@@ -3,6 +3,7 @@ import './App.css';
 import {x, y} from './variaveis.js';
 import Titulo from './Titulo';
 import MeuComponente from './dica1';
+import MeuSite from './dica2';
 
 function App() {
   return (
@@ -24,6 +25,10 @@ function App() {
         </a>
         <p>
           <MeuComponente></MeuComponente>
+        </p>
+
+        <p>
+          <MeuSite></MeuSite>
         </p>
 
       </header>
