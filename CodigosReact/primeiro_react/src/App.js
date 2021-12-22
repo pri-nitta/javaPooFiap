@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import {x, y} from './variaveis.js';
 import Titulo from './Titulo';
+import MeuComponente from './dica1';
 
 function App() {
   return (
@@ -21,6 +22,10 @@ function App() {
         >
           Learn React
         </a>
+        <p>
+          <MeuComponente></MeuComponente>
+        </p>
+
       </header>
     </div>
   );
