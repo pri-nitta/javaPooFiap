@@ -1,12 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
 import {x, y} from './variaveis.js';
+import Titulo from './Titulo';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+        <Titulo></Titulo>
         <p>
           iniciando com react! fácil não é... {x}<br/>
           {y}
