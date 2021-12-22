@@ -11,22 +11,30 @@ import React, {Component} from "react";
 class Titulo extends Component{
     constructor(props){
         super(props);
-        //this.elementoH1 = React.createRef();
-        //referencia para o H1
+        this.state = {texto: "Clique aqui"};
+        this.funcao = this.funcao.bind(this);
+
+        /*this.elementoH1 = React.createRef();
+        referencia para o H1
 
         this.state = {
             texto: "Meu texto padrão estado"
-        }
+        } */
     }
 //componentDidMount(){
     //função eh chamada qndo o componente aparece na tela
   //  this.elementoH1.current.innerHTML = "outro texto";
 //}
+funcao(){
+    //alert("você clicou no título");
+    this.setState({texto: "Você já clicou no titulo"});
+}
 
     render(){
         return(
             //<h1 ref={this.elementoH1}>Texto de exemplo</h1>
-            <h1>{this.state.texto}</h1>
+            //<h1>{this.state.texto}</h1>
+            <h1 onClick={this.funcao}>{this.state.texto}</h1>
         )
     }
 } 
