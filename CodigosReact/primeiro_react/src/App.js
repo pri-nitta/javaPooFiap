@@ -8,7 +8,8 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <Titulo></Titulo>
+        <Titulo texto="Texto através do atributo"></Titulo>
+        //pode passar também atributos através do props
         <p>
           iniciando com react! fácil não é... {x}<br/>
           {y}

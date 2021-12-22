@@ -9,9 +9,19 @@ import React, {Component} from "react";
 //retorna uma função html, vira uma tag html
 
 class Titulo extends Component{
+    constructor(props){
+        super(props);
+        this.elementoH1 = React.createRef();
+        //referencia para o H1
+    }
+componentDidMount(){
+    //função eh chamada qndo o componente aparece na tela
+    this.elementoH1.current.innerHTML = "outro texto";
+}
+
     render(){
         return(
-            <h1>Titutlo componentizado</h1>
+            <h1 ref={this.elementoH1}>Texto de exemplo</h1>
         )
     }
 } 
